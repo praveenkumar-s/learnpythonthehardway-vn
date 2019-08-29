@@ -1,6 +1,6 @@
 # Excercise 1: Good First Program
 
-## I. Ví dụ  
+## I. Ví dụ  .
 
 ### 1.1. Trong bài viết này sẽ tạo ra một file excercise1.py để in ra màn hình nhưng xâu kí tự. 
 2
