@@ -1,4 +1,4 @@
-Chương trình dưới sẽ đọc dữ liệu từ bàn phím là chuối mà người dùng gõ vào. Dùng hàm input() để thực hiện nhận dữ liệu từ bàn phím người dùng
+The program below will read the data from the keyboard is the banana that the user types. Use the input () function to perform receiving data from the user keyboard
 ```sh
 print ("How old are you?")
 age = input()
@@ -23,7 +23,4 @@ How much do you weigh?
 So, you're '34' old, '1m74' tall and '78' heavy.
 >>> 
 ```
-### Study Drills
-
-### Common Student Questions
 
