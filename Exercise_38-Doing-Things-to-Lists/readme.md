@@ -1,16 +1,16 @@
-Trong những bài trước bạn đã học về list. Dùng vòng lặp while để thêm các phân vào trong list và in chúng ra . Bạn thể quay trở lại những bài trước để xem lại
+In the previous lessons you learned about lists. Use the while loop to add the segments to the list and print them out. You can return to previous posts to review
 
-Trong bài trước, chúng ta đã biết hàm *append* để thêm phần tử vào list. Tuy nhiên có thể bạn chưa hiểu hết được append làm việc với list như thế nào, ví dụ dưới đây sẽ cho bạn thấy rõ hơn điều đó.
+In the previous lesson, we already knew the * append * function to add elements to a list. However, maybe you do not fully understand how append works with the list, the example below will show you more clearly that.
 
 When you write mystuff.append('hello') you are actually setting off a chain of events inside Python to cause something to happen to the mystuff list. Đây là cách nó hoạt động
 
-1. Python thấy bạn đề cập đến biến mystuff. Nhận thấy phía sau ta gán "=",là một tham số của hàm , hoặc là một biến toàn cục.
-2. Python nhận thấy có dấu "." và xem xét các biến mà là một phần của mystuff
-3. Sau đó  list mystuff sẽ tìm tất cả các hàm mà nó sử lý. Nếu hàm append có trong đó thì append được sử dụng
-4. Python gọi hàm ra và chèn tham số vào  
-5. Thực chất Python gọi hàm append( mystuff, hello) đúng hơn là gọi hàm. mystuff.append('hello')
+1. Python sees you referring to the mystuff variable. Notice that after we assign "=", it is a function parameter, or a global variable. 2. Python notices a "." and look at the variables that are part of mystuff 3. Then the mystuff list will find all the functions it handles. If append is included, append is used 4. Python calls the function and inserts parameters into it.   5. Python actually calls append (mystuff, hello) rather than the function. mystuff.append ('hello')
 
-Đối với hầu hết các phần bạn không cần phải biết rằng điều này đang xảy ra , nhưng nó giúp khi bạn nhận được thông báo lỗi từ Python như thế này :
+
+
+
+
+For the most part you don't need to know that this is happening, but it helps when you get error messages from Python like this:
 
 ```sh
 $ python
@@ -31,10 +31,10 @@ TypeError: test() takes exactly 1 argument (2 given)
 
 ```
 
-Nhìn đoạn code trên, ta đã gọi hàm test trong lớp Thing, tuy nhiên lênh xuất ra màn hình trong hàm vẫn không được chạy. Lỗi thông báo * test() takes exactly 1 argument . trong khi đó ta lại cho 2 argument, Như vậy OpenStack sẽ thay 
-a.test("hello") thành test(a,"hello")
+Looking at the code above, we have called the test function in the Thing class, but the command output to the screen in the function has not been run. Error message * test () takes exactly 1 argument. meanwhile we give 2 arguments, so OpenStack will replace a.test ("hello") with test (a, "hello")
 
-Chúng ta xem xét bài tập dưới đây
+
+We consider the exercise below
 
 ```sh
 ten_things = "Apples Oranges Crows Telephone Light Sugar"
@@ -63,7 +63,7 @@ print '#'.join(stuff[3:5]) # super stellar!
 
 ##What would you see
 
-Chạy chương trình trên ta sẽ thấy 
+Running the above program we will see 
 ```sh
 $ python ex38.py
 Wait there are not 10 things in that list. Let's fix that.
@@ -86,28 +86,28 @@ Telephone#Light
 
 ## What list can do
 
-Nào bây giờ bạn hãy tạo  trò chơi dựa trên GoFish. Nếu bạn không biết trò GoFish thì hãy dành chút thời 
-gian tham khảo trên internet. Những gì bạn phải làm là tạo ra các kịch bản khác nhau và đưa vào chương
-trình Python. list là một trong những cấu trúc dữ liệu phổ biến nhất các lập trình viên sử dụng. chỉ đơn giản là số thứ tự của các sự kiện mà bạn muốn để lưu trữ và truy cập ngẫu nhiên hoặc tuyến tính bằng chỉ số . Điều đó là sao?
+Now create a game based on GoFish. If you do not know GoFish, please take some time to consult on the internet. What you have to do is create different scripts and put them into the Python program. List is one of the most common data structures that programmers use. Simply the ordinal number of the events you want to store and random or linear access by index. What is that about?
+
+
 
 ##When to Use Lists
 
-Bạn sử dụng một danh sách bất cứ khi nào bạn có một cái gì đó phù hợp với các tính năng hữu dụng cấu trúc dữ liệu của danh sách
+You use a list whenever you have something that fits the list's useful data structure features.
 
-1. Nếu bạn cần để duy trì trật tự . Hãy nhớ, đây là thứ tự liệt kê, không được sắp xếp theo thứ tự. Danh sách không sắp xếp cho bạn 
-2. Nếu bạn cần truy cập vào các nội dung bởi một số ngẫu nhiên . Hãy nhớ rằng, điều này được sử dụng số đếm bắt đầu từ 0
-3. Nếu bạn cần đi nội dung từ đầu đến cuối, vòng lặp for sẽ được dùng
+1. If you need to maintain order. Remember, this is listed in order, not sorted. The list does not sort for you 2. If you need access to the content by a random number. Remember, this is using a count starting at 0 3. If you need to go from start to finish, the for loop will be used.
+
+
 
 ## Study Drills
 
-1. Mỗi fuction trong Python hãy chỉ ra từng bước mà Python gọi chúng, ví dụng more_stuff.pop() như là pop(more_stuff)
-2. Dịch ra 2 cách để nhìn các hàm. Ví dụ more_stuff.pop() đọc như là" Gọi *pop* trên *more_stuff*. Trong khi ấy pop(more_stuff) gọi hàm *pop* với tham số *more_stuff* và cách nào mà cách hai cách gọi đó tương tự nhau
-3. đọc lập trình hướng đội tượng online
-4. Đọc lớp trong Python. Không đọc tài liệu sử lớp của các ngôn ngữ khác, nó chỉ làm bạn dối hơn thôi.
-5. Nếu bạn thấy khó khăn trong lập trình hướng đối tượng thì cũng đừng quá lo lắng, hãy thữ lập trình chức năng
-6. Tìm 10 ví dụ về những thứ bạn tìm thấy trong thực tế và điền trong vào list. và viết script làm việc với chúng
+1. Each fuction in Python shows the steps that Python calls them, using more_stuff.pop () as pop (more_stuff) 2. Translate two ways to see functions. For example more_stuff.pop () reads as "Call * pop * on * more_stuff * . Meanwhile pop (more_stuff) calls * pop * function with the parameter * more_stuff * and how the two ways are similar 3. Reading object-oriented programming online 4. Reading classes in Python Not reading class history documents of other languages, it just makes you lie .
+
+
+
+If you find it difficult to object-oriented programming, do not worry, try functional programming 6. Find 10 examples of what you find in reality and fill in the list. and write scripts to work with them
+
 
 ## Common Student Questions
-Q: stuff[3:5] có vai trò như thế nào
+Q: What role does [3: 5] play?
 
-Answer: Hàm trên lấy ra phần tử 3 và phần tử 4 trong stuff, không lấy ra phần tử thứ 5
+Answer: The above function retrieves element 3 and element 4 in stuff, does not retrieve the fifth element
