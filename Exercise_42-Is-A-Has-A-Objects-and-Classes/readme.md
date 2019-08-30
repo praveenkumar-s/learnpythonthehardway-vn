@@ -1,16 +1,16 @@
-Có một điều quan trọng là bạn phải hiểu sự khác biệt giữa lớp và đối tượng. Vấn đề là , không có " sự khác biệt" thực sự giữa một lớp và một đối tượng. Chúng có những nét tương đồng . Ví dụ như sự khác nhau giữa loài cá và cá hồi. Câu hỏi khiến ta có thể nhầm lẫn. Ta thấy rằng cá hồi và cá có khác nhau nhưng cá hồi là một dạng của cá, điều đó cũng có thể hiểu là không khác nhau giữa cá và cá hồi. Nhưng cá hồi có những điều khác biệt so với các loại cá khác. Cá hồi khác với cá mập. vì vậy cá hồi và cá có những điểm chung nhưng cũng có những điểm khác nhau.
+It is important that you understand the difference between classes and objects. The problem is, there is no real "difference" between a class and an object. They have similarities. For example, the difference between fish and salmon. The question makes us confused. We see that salmon and fish are different but salmon is a form of fish, it can also be understood that there is no difference between fish and salmon. But salmon is different from other fish. Salmon is different from sharks. So salmon and fish have something in common, but there are also differences.
  
- Bạn không cần nghĩ sự khác nhau giữa cá hồi và cá mập bởi vì bạn biết rằng chúng có liên hệ với nhau.Bạn biết cá hồi là một loại cá và có những loại cá khác mà .
+ You don't need to think about the difference between salmon and sharks because you know that they are related. You know salmon is one type of fish and there are other types of fish.
  
- Bạn  hãy tưởng tượng rằng trong một bể cá có ba con cá tên là Frank, Joe và Mary. Câu hỏi được đặt ra là sự khác nhau giữa Mary và Salmon. Liên hệ với câu hỏi trước bạn biết rằng Mary là cá hồi. và Mary là một thí dụ của cá
- hồi. Joe và Frank cũng là những thí dụ của cá hồi. 
+Imagine that in an aquarium there are three fish named Frank, Joe and Mary. The question is the difference between Mary and Salmon. Contact the previous question you know that Mary is salmon. and Mary is an example of salmon. Joe and Frank are also examples of salmon.
 
-Bây giờ ta đã có những nhận định sau: Cá là một lớp, và cá hồi cũng là một lớp, Mary cũng là một lớp. lớp cá
-là một lớp trừu tượng không chỉ cụ thể cho mội đối tượng nào. Cá là nói chung cho những thực thể mà chúng sống
-ở dưới nước. Cá hồi là đối tượng của lớp cá sẽ có những đặc điểm riêng như màu đỏ, lớn, sống ở đại dương 
-hoặc ở vùng nước ngọt.
 
-## Code hướng đối tượng
+We now have the following observations: Fish is a class, and salmon is also a class, Mary is also a class. The fish class is an abstract class that is not only specific to each object. Fish are generally for entities that live in water. Salmon is the object of the fish class will have its own characteristics such as red, large, living in the ocean or in fresh water.
+
+
+
+
+## Object-oriented code
 
 ```sh
 ## Animal is-a object (yes, sort of confusing) look at the extra credit
@@ -91,19 +91,19 @@ crouse = Salmon()
 harry = Halibut()
 ```
 
-## Tìm hiểu thêm
+## Learn more
 
-1. Nghiên cứu tại sao Python thêm lớp đối tượng này , và điều đó có nghĩa là gì.
-2. Có thể sử dụng một lớp như một object
-3. Thêm vào các lớp animal , fish, và people trong bài tập này với cac hàm
-4. Tạo thêm nhiều lớp mới với các mối liên quan đến nhau
+1. Research why Python adds this object class, and what that means. 2. You can use a class as an object 3. Add animal, fish, and people classes in this exercise with the functions 4. Create more new classes with related relationships
 
-## Giải đáp
+
+
+
+## Answer
 
 Q: self.pet = none
 
-Answer: Câu lệnh trên thiết lập thuộc tính self có giá trị rỗng
+Answer: The above statement sets the self attribute to be null
 
-Q:Lệnh super(Employee, self).__init__(name) để làm gì ?
+Q: Super command (Employee, self). __ init __ (name) for what?
 
-Answer: Lệnh trên dùng để gọi lớp cha của lớp Employee
+Answer: The above command is used to call the parent class of Employee class
