@@ -1,158 +1,159 @@
-## Bài 40: Modules, Classes, and Objects
 
-Python được gọi là một "ngôn ngữ lập trình hướng đối tượng . " Sử dụng các lớp trong lập trình để chương trình trở nên rõ ràng hơn. Bây giờ tôi sẽ chỉ cho bạn những bước khởi đầu của lập trình hướng đối tượng, class, object cũng như module.
+##  40: Modules, Classes, and Objects
 
-## Modules giống như Dictionaries
+Python is called an "object-oriented programming language." Use classes in programming to make the program clearer. Now I will show you the beginning steps of object-oriented programming, classes, objects and modules.
 
-Bạn đã được biết dictionary được tạo ra và sử dụng để map giữa key và value. Điều đó có nghĩa là nếu bạn tao ra một key là "apple" và bạn muốn lấy ra nội dung mà key đó chứa thì làm như sau:
+## Modules are like Dictionaries
+
+You have learned that a dictionary is created and used to map between key and value. That means if you created a key that is "apple" and you want to retrieve the content that key contains, do the following:
 ```sh
 mystuff = {'apple': "I AM APPLES!"}
-print mystuff['apple']
-```
+print mystuff['apple']```
 
-Giữ suy nghĩ " get X from Y" trong tâm trí bạn và bây giờ nghĩ về module. Ta tạm định nghĩa nó như là
 
-1. Một file Python với các hàm hoặc các biết trong đó
-2. Bạn import file
-3. Bạn có thể truy cập các functions hoặc các biến trong module với dấu chấm
+Keep the "get X from Y" thought in your mind and now think about the module. I temporarily define it as
 
-Giả sử bạn có một module tên mystuff.py và có funtion *apple*. Nội dung module
-*mystuff.py*
+1. A Python file with functions or functions in it 2. You import files 3. You can access functions or variables in a module with dots
+
+
+
+Suppose you have a module named mystuff.py and have funtion * apple * . Module content * mystuff.py *
+
 ```sh
 # this goes in mystuff.py
 def apple():
-    print "I AM APPLES!"
-```
-Trong chương trình của bạn, bạn có thể sử dụng module MyStuff với hàm *import* và sau đó truy cập vào funtion *apple*:
+    print "I AM APPLES!"```
+
+In your program, you can use the MyStuff module with the * import * function and then access the funtion * apple * :
 
 ```sh
 import mystuff
-mystuff.apple()
-```
+mystuff.apple()```
 
-Bạn cũng có thể đặt thêm biến tên là *tangerine*:
+
+You can also add a variable named * tangerine * :
 ```sh
 def apple():
-    print "I AM APPLES!"
+    print "I AM APPLES!"# this is just a variabletangerine = "Living reflection of a dream"```
 
-# this is just a variable
-tangerine = "Living reflection of a dream"
-```
-và truy cập vào biến
+
+
+
+and access variables
 ```sh
-import mystuff
+import mystuffmystuff.apple()print mystuff.tangerine```
 
-mystuff.apple()
-print mystuff.tangerine
-```
-Nhớ lại dictionary và bạn sẽ bắt đầu thấy nó sử dụng gần giống như dictionary nhưng chỉ khác nhau về cú pháp. Hãy so sánh:
+
+
+
+Recall the dictionary and you'll start to see it uses almost the same dictionary but only has different syntax. Compare:
 ```sh
 mystuff['apple'] # get apple from dict
 mystuff.apple() # get apple from the module
-mystuff.tangerine # same thing, it's just a variable
-```
-Điều này có nghĩa chúng ta có một kiểu mẫu rất phổ biến trong Python:
+mystuff.tangerine # same thing, it's just a variable```
 
-1. tạo ra một key = value
-2. Lấy ra nội dung bởi tên của key
+This means we have a very common type in Python:
 
-Ở trong dictionary, key là string và cú pháp là [key] . trong module thì key và dấu hiệu và có cú pháp là .key. Chúng gần tương tự nhau
+1. create a key = value 2. Retrieve the content by the name of the key
 
-## Class giống như module
 
-Bạn có thể nghĩ về một module như một từ điển chuyên ngành mà có thể lưu trữ mã Python , do đó bạn có thể truy cập nó với dấu chấm. Python cũng có một cấu trúc phục vụ một mục đích tương tự được gọi là class. Một lớp học là một cách để có một nhóm các chức năng và dữ liệu đặt lên chúng, do đó bạn có thể truy cập chúng qua dấu chấm
+In dictionary, key is string and syntax is [key]. In the module, the key and sign and the syntax is .key. They are almost similar
 
-Nếu bạn tạo một class như một mystuff module. Bạn làm như sau
+## Class is like a module
+
+You can think of a module as a specialized dictionary that can store Python code so you can access it with dots. Python also has a structure that serves a similar purpose called classes. A class is a way to have a group of functions and data placed on them so you can access them via dots.
+
+If you create a class as a module mystuff. You do the following
 ```sh
-class MyStuff(object):
+class MyStuff(object):    def __init__(self):        self.tangerine = "And now a thousand years between"    def apple(self):        print "I AM CLASSY APPLES!"```
 
-    def __init__(self):
-        self.tangerine = "And now a thousand years between"
 
-    def apple(self):
-        print "I AM CLASSY APPLES!"
-```
-Có lẽ đến đây bạn sẽ thắc mắc sử dụng class MyStuff thay vì module mystuff với hàm 
-apple. Bạn cũng thấy khó hiểu với hàm __init__ cũng như cách khai báo biến 
-self.tangerine. Bạn cũng nên biết về object và cách object làm việc với mystuff
 
-## Object như là Import
 
-Nếu class coi như là một mini-module. Khi ta import một class và khởi tạo mới thì 
-gọi là instance. Một instance được gọi bởi hàm class như sau
+
+
+
+Perhaps here you will wonder how to use the MyStuff class instead of the mystuff module with the apple function . You also find it confusing with the __ init __ function as well as how to declare the variable self.tangerine. You should also know about objects and how objects work with mystuff
+
+
+
+## Object as Import
+
+If the class is considered a mini-module. When we import a class and create a new one, it is called an instance. An instance is called by the class function as follows
+
 ```sh
 thing = MyStuff()
 thing.apple()
-print thing.tangerine
-```
-Ta xem xét các thành phần tạo lên lớp MyStuff
+print thing.tangerine```
 
-1.Gọi đến MyStuff() thấy rằng nó là một class mà đã xác định.
-2. Python khởi tạo một đối tượng rỗng với tất cả các tính năng bên trong sử dụng
-*def*
-3. Hàm __init___ gọi là chức năng để khởi tạo đối tượng rỗng vừa tạo .
-4. Trong hàm __init__ có biến *seft* là đối tượng rỗng Python làm cho tôi , và tôi có thể thiết lập các biến trên nó giống như bạn làm với một mô-đun , từ điển, hoặc đối tượng khác 
-5. Trong trường hợp trên *self.tanger* là một biến
-6. Bây giờ Python có thể đưa đối tượng  này gán nó vào biến *thing*
+We consider the components that make up the MyStuff class
+
+1. Call MyStuff () to see that it is a class that has been defined. 2. Python initializes an empty object with all the internal features using * def * 3. The __ init_ __ function calls the function to initialize the newly created empty object. 4. In the __ init __ function, the variable * seft * is an empty Python object for me, and I can set variables on it just like you would with a module, dictionary, or other object 5. In the above case * self.tanger * is a variable 6. Now Python can include this object as a variable *
+
+
+
+
+
+thing*
 
 ## Getting things from things
 
-Bây giờ ta có ba cách để lấy giá trị  từ key
+Now we have three ways to get the value from the key
 ```sh
 # dict style
-mystuff['apples']
+mystuff['apples']# module stylemystuff.apples()print mystuff.tangerine# class stylething = MyStuff()thing.apples()print thing.tangerine```
 
-# module style
-mystuff.apples()
-print mystuff.tangerine
 
-# class style
-thing = MyStuff()
-thing.apples()
-print thing.tangerine
-```
-## Ví dụ về lớp 
 
-Có thể bạn sẽ thấy sự tương đông của 3 cách khai báo key = value và có những thắc mắc
+
+
+
+
+
+
+
+## Class example
+
+You will probably see the similarity of the three key = value declarations and have questions
 ```sh
-class Song(object):
+class Song(object):    def __init__(self, lyrics):        self.lyrics = lyrics    def sing_me_a_song(self):        for line in self.lyrics:            print linehappy_bday = Song(["Happy birthday to you",                   "I don't want to get sued",                   "So I'll stop right there"])bulls_on_parade = Song(["They rally around tha family",                        "With pockets full of shells"])happy_bday.sing_me_a_song()bulls_on_parade.sing_me_a_song()```
 
-    def __init__(self, lyrics):
-        self.lyrics = lyrics
 
-    def sing_me_a_song(self):
-        for line in self.lyrics:
-            print line
 
-happy_bday = Song(["Happy birthday to you",
-                   "I don't want to get sued",
-                   "So I'll stop right there"])
 
-bulls_on_parade = Song(["They rally around tha family",
-                        "With pockets full of shells"])
 
-happy_bday.sing_me_a_song()
 
-bulls_on_parade.sing_me_a_song()
-```
-## Những gì bạn nhìn thấy
+
+
+
+
+
+
+
+
+
+
+
+
+
+## What you see
 ```sh
 $ python ex40.py
 Happy birthday to you
 I don't want to get sued
 So I'll stop right there
 They rally around tha family
-With pockets full of shells
-```
-## Tìm hiểu thêm
+With pockets full of shells```
 
-1. viết một vài bài hát và in ra lời bài hát
-2. Put the lyrics in a separate variable, then pass that variable to the class to use 
-3. Tìm hiểu trên mạng về lập trình hướng đối tượng
+## Learn more
 
-## Một số câu hỏi chung
+1. write a few songs and print out the lyrics 2. Put the lyrics in a separate variable, then pass that variable to the class to use 3. Learn online about object-oriented programming
 
-Q. Sử dụng seft trong hàm __init__
 
-Answer: *seft* nghĩa la chính nó. Khi khởi tạo một instance ta sẽ truyền đối tượng này vào seft. 
-ví dụ *thing= mystuff()* và sử dụng biến *thing.cheese* thì ánh xạ với seft.cheese trong khai báo lớp
+
+## Some general questions
+
+Q. Using seft in __ init __ function
+
+Answer: * seft * means itself. When initializing an instance we will pass this object to seft. for example * thing = mystuff () * and using variable * thing.cheese * then map with seft.cheese in the class declaration
+
