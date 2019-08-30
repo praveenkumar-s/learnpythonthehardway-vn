@@ -2,7 +2,7 @@
 
 ## I. Ví dụ  
 
-### 1.1. Trong bài viết này sẽ tạo ra một file excercise1.py để in ra màn hình nhưng xâu kí tự. 
+### 1.1.In this article, we will create an excercise1.py file to print on the screen but with strings.
 2
 B1: Tạo 1 file exercise1.py chèn nội dung sau vào file: 
 
