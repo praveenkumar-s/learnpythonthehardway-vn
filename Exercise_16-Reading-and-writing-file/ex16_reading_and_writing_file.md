@@ -1,12 +1,14 @@
-Làm việc với file ta cần nhớ tác dụng của một số hàm sau:
+#### Working with the file, we need to remember the effects of some of the following functions:
 
-+ close: Đóng file. Giống như File -> Save trong soạn thảo
-+ read : Đọc nội dung của file, ta có thể gán nội dung cho biến
-+ readline: Đọc từng dòng của file 
-+ truncate:  Làm rỗng file
-+ write('stuff')- Ghi "stuff" vào file
++ close: Close the file. Like File -> Save in the editor
++ read: Read the contents of the file, we can assign the content to the variable
++ readline: Read each line of the file
++ truncate: Empty the file
++ write ('stuff') - Write "stuff" in the file
 
-Đoạn script sau ta sẽ truyền vào tên file và ghi nội dung vào file theo từng dòng
+The following script will pass the file name and write the content to the file line by line
+
+
 
 ```sh
 from sys import argv
@@ -44,7 +46,7 @@ print "And finally, we close it."
 target.close()
 ```
 ### What You Shoud See
-Chạy chương trình ta được kết quả sau
+Run the program we get the following results
 
 ```sh
 $ python ex16.py test.txt
