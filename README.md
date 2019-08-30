@@ -1,7 +1,7 @@
 Learn Python the Hard Way
 ====================
+###Note: All readme files in this repo were translated from vietnamese, so please excuse if there are untranslated stuff lying around
 
-- We are from VIETNAM. 
 - We are learning Python Programing language with the 3rd Edition Learn Python the Hard Way at: http://learnpythonthehardway.org/book/
 - Thanks!
 
