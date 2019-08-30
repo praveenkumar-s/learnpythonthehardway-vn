@@ -1,6 +1,6 @@
-Thay vì dùng hàm input() ta dùng input("String") để gợi ý cho người dùng nhập vào
+Instead of using the input () function, we use input ("String") to suggest the user to enter
 
-Chạy chương trình sau 
+Run the following program
 ```sh
 age = input("How old are you? ")
 height = input("How tall are you? ")
@@ -18,7 +18,3 @@ How tall are you? 1m74
 How much do you weigh? 68
 So, you're 'fine' old, '1m74' tall and '68' heavy.
 ```
-### Study Drills
-
-### Common Student Questions
-
