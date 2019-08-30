@@ -1,6 +1,6 @@
-Giờ ta sẽ tìm hiểu một khái niệm quan trọng trong Python và được thường xuyên sử dụng là "dicts". Một số ngôn
-ngữ khác gọi là "hashes". Ta có xu hướng sử dụng cả hai tên nhưng điều đó không quá quan trọng
-. Ta hãy xem danh sách list làm được những gì
+Now we will learn an important concept in Python and is often used as "dicts". Some other languages ​​are called "hashes". We tend to use both names but that's not so important . Let's see what the list does
+
+
 
 ```sh
 >>> things = ['a', 'b', 'c', 'd']
@@ -12,7 +12,7 @@ z
 >>> things
 ['a', 'z', 'c', 'd']
 ```
-Ta có thể sử dụng chỉ số để lấy các phần tử trong danh sách. Trường hợp ta muốn lấy một đối tượng đi theo từ khóa thì list không làm được việc này, khi đó ta cần sử dụng dict. Với dict thì gắn khóa với giá trị. Xem ví dụ dưới đây
+We can use indexes to get items from the list. In case we want to retrieve an object by keyword, the list does not do this, then we need to use dict. With dict, the key is attached to the value. See the example below
 
 ```sh
 >>> stuff = {'name': 'Zed', 'age': 39, 'height': 6 * 12 + 2}
@@ -26,9 +26,9 @@ Zed
 >>> print stuff['city']
 San Francisco
 ```
-Bạn sẽ thấy thay vì dùng số chúng ta sử dụng string khi chúng ta muốn gọi ra
-các đối tượng. Chúng ta cũng có thể chèn thêm các đối tượng khác vào trong 
-từ điển. chúng ta cũng có thể truyền vào key là một số
+You will see instead of using the numbers we use strings when we want to call objects. We can also insert other objects into the dictionary. We can also pass a key as a number
+
+
 
 ```sh
 >>> stuff[1] = "Wow"
@@ -38,31 +38,31 @@ Wow
 >>> print stuff[2]
 Neato
 >>> stuff
-{'city': 'San Francisco', 2: 'Neato', 'name': 'Zed', 1: 'Wow', 'age': 39, 'height': 74}
-```
-Trong đoạn code này, tôi sử dụng các con số, và sau đó bạn có thể  thấy những con số và chuỗi string như là chìa khóa trong dict khi tôi muốn in chúng ra.
+{'city': 'San Francisco', 2: 'Neato', 'name': 'Zed', 1: 'Wow', 'age': 39, 'height': 74}```
 
-Ta cũng có thể xóa các phần tử trong từ điển với *del*
+In this code, I use numbers, and then you can see the numbers and string strings as the key in dict when I want to print them out.
+
+You can also delete elements from the dictionary with * del *
 
 ```sh
 >>> del stuff['city']
 >>> del stuff[1]
 >>> del stuff[2]
 >>> stuff
-{'name': 'Zed', 'age': 39, 'height': 74}
-```
+{'name': 'Zed', 'age': 39, 'height': 74}```## Example for DictionaryNow we will do an exercise that you must pay close attention to. I want you to type in this code and try to understand them. Please note that when you add dict, get a hash function. This example is mapping countries to their abbreviations, and then abbreviations for cities in the states. Remember, "mapping" or "associating" are important concepts in a dictionary.```sh# create a mapping of state to abbreviationstates = {    'Oregon': 'OR',    California: CA,    Florida: FL,
 
-## Ví dụ cho Dictionary
 
-Bây giờ chúng ta sẽ làm một bài tập mà bạn phải chú ý cẩn thận . Tôi muốn bạn gõ code này vào và cố gắng hiểu chúng
-Hãy lưu ý khi bạn thêm vào dict , se nhận được một hàm băm. ví dụ này là lập bản đồ các quốc gia để chữ viết tắt của họ , và sau đó là chữ viết tắt về các thành phố ở các bang. Hãy nhớ rằng, "mapping " hoặc " associating " là khái niệm quan trọng trong một từ điển.
 
-```sh
-# create a mapping of state to abbreviation
-states = {
-    'Oregon': 'OR',
-    'Florida': 'FL',
-    'California': 'CA',
+
+
+
+
+
+
+
+
+
+
     'New York': 'NY',
     'Michigan': 'MI'
 }
@@ -121,7 +121,7 @@ city = cities.get('TX', 'Does Not Exist')
 print "The city for the state 'TX' is: %s" % city
 ```
 
-## Những gì bạn thấy
+## What you see
 
 ```sh
 $ python ex39.py
@@ -157,44 +157,44 @@ Sorry, no Texas.
 The city for the state 'TX' is: Does Not Exist
 ```
 
-## Nhưng điều và Dicrionaries có thể làm
+## But what Dicrionaries can do
 
-Từ điển là một ví dụ về cấu trúc dữ liệu, danh sách trong dictionaries là phổ biến nhất sử dụng cấu trúc dữ liệu trong lập trình. Một dictionary sử dụng map hoặc associate những gì bạn muốn 
-lưu theo từ khóa
+Dictionaries are an example of data structures, lists in dictionaries are the most common use of data structures in programming. A dictionary uses map or associate what you want to save as a keyword
 
-## Khi nào sử dụng Dictionaries, khi nào dùng List
 
-Như đã đề cập ở bài 38. List được dùng để khi ta muốn lưu trữ hoặc tổ chức những thức theo kiểu danh sách.
-Từ điển gần giống như vậy nhưng khác với list, từ điển mapping đối tượng lưu trữ với 
-key. Rõ hơn thì ta sử dụng dictionary khi
+## When to use Dictionaries, when to use List
 
-1. Bạn có để lấy những điều dựa trên một số định danh , như tên, địa chỉ , hoặc bất cứ điều gì mà có thể là chìa khóa 
-2. Khi ta không cần quan tâm đến thứ tự. Dictionaries không có khái niệm về thứ tự, list làm việc này
-3. khi bạn muốn thêm hay loại phần tử theo từ khóa
+As mentioned in lesson 38. List is used when we want to store or organize things in a list style. The dictionary is similar but different from the list, the dictionary maps the storage object with the key. More clearly, we use dictionary when
 
-## Tìm hiểu thêm
 
-1. Thực hành cùng một loại bản đồ với các thành phố và tiểu bang / vùng lãnh thổ ở nước bạn hay một số nước khác
-2. Tìm thêm tài liệu về dictionaries trong Python và cố gắng làm việc với chúng
-3. Tìm những thứ mà bạn không thể làm việc với dictionaries. 
-4. Tạo một hàm dump giống như list nhưng hàm có đầy đủ nội dung mà bạn có thể gỡ lỗi
-5. Hãy chắc chắn rằng bạn hiểu được vai trò của hàm hash trong code. Đó là hàm đặc biệt để chuyển đổi string sang integer. Bạn có thể tìm hiểu thêm vai trò của hàm *hash* ở trên mạng
 
-## Những câu hỏi chung
+1. You have to get things based on some identifiers, like names, addresses, or anything that might be the key 2. When one doesn't need to care about the order. Dictionaries have no concept of order, this list works 3. when you want to add or type elements by keyword
 
-Q: Sự khác nhau giữa một list và dictionary?
 
-Answer: Một list cho một danh sách có thứ tự. Còn từ điển hay dictionary để mapping giữa các items
-keys và các items values
 
-Q: Sử dụng từ điển như thế nào
+## Learn more
 
-Answer: khi ta muốn lấy giá trị trong dictionary ta có thể gọi theo từ khóa
+1. Practice the same type of map with cities and states / territories in your country or some other countries 2. Find more documents about dictionaries in Python and try to work with them 3. Find things that you cannot work with dictionaries. 4. Create a dump function like the list, but the function has enough content that you can debug. 5. Make sure you understand the role of the hash function in the code. It is a special function to convert string to integer. You can find out more about * hash *'s role online
 
-Q: Sử dụng list như thế nào
 
-Answer: Sử dụng list cho bất cứ danh sách có thứ tự và gọi chúng theo chỉ số index
 
-Q: Nếu sử dụng dictionary, tôi cần sắp xếp chúng thì làm thế nào
 
-Answer: Ta có thể sử dụng collections.OrderedDict trong Python.
+
+## General questions
+
+Q: What is the difference between a list and dictionary?
+
+Answer: A list for an ordered list. A dictionary or dictionary for mapping between items keys and items values
+
+
+Q: How to use a dictionary
+
+Answer: when we want to get value from dictionary we can call it by keyword
+
+Q: How to use the list
+
+Answer: Use lists for any ordered list and call them according to the index
+
+Q: If I use dictionaries, I need to organize them
+
+Answer: We can use collections.OrderedDict in Python.
