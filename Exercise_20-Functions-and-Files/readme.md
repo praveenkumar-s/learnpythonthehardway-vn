@@ -1,8 +1,8 @@
 # Exercise 20: Functions and Files
 
-## Ví dụ 
+## For example
 
-Trong bài chúng ta học về cách kết hợp giữa hàm và file.
+In this lesson, we learned how to combine functions and files.
 
 Script: 
 
@@ -30,7 +30,7 @@ Script:
     current_line = current_line + 1
     print_a_line(current_line, current_file)
 
-## Chạy code 
+## code 
 
     $ python ex20.py test.txt
     First let's print the whole file:
