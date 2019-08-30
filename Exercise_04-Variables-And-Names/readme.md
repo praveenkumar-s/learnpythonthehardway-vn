@@ -1,21 +1,21 @@
 # Exercise 4: Variables And Names 
 
-## I. Ví dụ
-Bây giờ bạn đã có thể in mọi thứ với print và bạn có thể làm với các phép toán. Bước tiếp theo là học về biến. Trong lập trình, biến chẳng qua là một cái tên, tương tự như "Tên tôi là Zed, người đã viết ra cuốn sách này". 
+## I. For example
+Now you can print everything with print and you can do it with operations. The next step is learning about variables. In programming, the variable is just a name, similar to "My name is Zed, who wrote this book".
 
-Biến thường là tên để gợi nhớ trong các đoạn code. Nếu biến được đặt tên không tốt, rất có thể khi đọc lại bạn sẽ quên rằng bạn đã viết gì.
+Variables are often names to recall in the code. If the variable is named badly, chances are you will read it again and you'll forget what you wrote.
 
-Cú pháp:
+Syntax:
 
 ```sh
-tên biến = giá trị
+name variable = value value
 ```
 
 Có đoạn code: 
 
 ```sh
 # -*- coding: utf-8 -*-
-# Khái báo biến cars
+
 cars = 100
 space_in_a_car = 4.0
 drivers = 30
@@ -33,13 +33,13 @@ print "We have", passengers, "to carpool today."
 print "We need to put about", average_passengers_per_car, "in each car."
 ```
 
-## II. Kết quả của đoạn mã nguồn trên 
+## II. The result of the above source code
 
 <img src=http://i.imgur.com/Fbz84x0.png width="60%" height="60%" border="1">
 
 ## III. Luyện Tập 
-- Sử dụng 4.0 cho biến `space_in_a_car` thay cho 4. Điều gì sẽ xảy ra nếu ta để là 4. Hãy thử xem.
-- 4.0 là số có kiểu động.
+- Use 4.0 for variables space_in_a_carinstead of 4. What if I left it as 4. Try it.
+- 4.0 is a dynamic number type.
 
 ## IV. Câu hỏi 
-- Sự khác nhay giữa dấu `=` và `==` là gì ?
+- What is the difference between ampersands =and ==?
