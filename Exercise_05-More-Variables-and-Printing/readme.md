@@ -1,11 +1,11 @@
 # Exercise 5: More Variables and Printing
 
-## I. Ví dụ 
-Các bài trước bạn đã học được cách in ra màn hình một chuỗi.
+## I. For example
+In the previous lessons, you learned how to print a string on a screen.
 
-Trong bài chúng ta có thể học về cách tạo ra một chuỗi và gắn biến vào chuỗi này. Trong bài này chúng ta sẽ sử dụng một khái niệm format string.
+n this lesson we can learn how to create a string and attach a variable to it. In this article we will use a concept of format string.
 
-Mình có đoạn code như sau: 
+I have the following code:
 
 ```sh
 # -*- coding: utf-8 -*-
@@ -29,28 +29,23 @@ print "If I add %d, %d, and %d I get %d." % (
 my_age, my_height, my_weight, my_age + my_height + my_weight)
 ```
 
-## II. Output của đoạn code trên 
+## II. Output of the above code
 
 <img src=http://i.imgur.com/4QdLBd4.png width="60%" height="60%" border="1">
 
 
-Giải thích code một chút:
+Explain the code a bit:
 
-Từ dòng 2 đến 8 là khai báo biến.
+From lines 2 to 8 is the variable declaration.
 
-Băt đầu từ dòng 10 trở đi ta sẽ thấy trong chuỗi in ra màn hình xuất hiện %s hoặc %d nhưng tham số này là format string mục đích là để đưa biến vào trong chuỗi. Sau khi kết thúc 1 chuỗi thì sẽ là %tenbien truyền vào chuỗi. Nếu trong chuỗi của bạn có nhiều format string bạn có truyền biến theo cú pháp sau: %(tenbien1,tenbien2, ...)
+Starting from line 10 onwards, we will see% s or% d in the printout, but this parameter is a format string whose purpose is to include the variable in the string. After the end of a string, it will be% of the transfer name. If there are multiple format strings in your string, you can pass the variable with the following syntax:% (namename, name2, ...)
 
-Bạn có thể sử dụng `%r` để thay thế các ký tự `%s` và `%d` . Hãy thử và quan sát xem điều gì xảy ra nhé.
+You can use this %rto replace characters %sand %d. Try it and see what happens.
 
-`%s` dùng để thay thế cho chuỗi.
+%s used to replace string.
 
-`%d` dùng để thay thế cho số
+%d used to replace numbers
 
-`%r` bạn tự đoán nhé :)
-
-## III. Luyện Tập 
-
-## IV. Câu hỏi 
-
+%r You guessed yourself :blush:
 
 
