@@ -1,31 +1,31 @@
 # Exercise 24: More Practice
 
-Mục tiêu của bài này sẽ giúp bạn thực hành nhiều hơn, ví dụ trong bài này sẽ dài hơn và có kết hợp của các phần khác.
+The goal of this lesson is to help you practice more, for example in this article it will be longer and have a mix of other parts.
 
-Script:
+Script:    print "Let's practice everything."    print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'    poem = """    \tThe lovely world    with logic so firmly planted    cannot discern \n the needs of love    nor comprehend passion from intuition    and requires an explanation    \n\t\twhere there is none.    """    print "--------------"    print poem    print "--------------"    five = 10 - 2 + 3 - 6    print "This should be five: %s" % five    def secret_formula(started):        jelly_beans = started * 500        jars = jelly_beans / 1000
 
-    print "Let's practice everything."
-    print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+
+
     
-    poem = """
-    \tThe lovely world
-    with logic so firmly planted
-    cannot discern \n the needs of love
-    nor comprehend passion from intuition
-    and requires an explanation
-    \n\t\twhere there is none.
-    """
+
+
+
+
+
+
+
+
     
-    print "--------------"
-    print poem
-    print "--------------"
-    five = 10 - 2 + 3 - 6
-    print "This should be five: %s" % five
+
+
+
+
+
     
     
-    def secret_formula(started):
-        jelly_beans = started * 500
-        jars = jelly_beans / 1000
+
+
+
         crates = jars / 100
         return jelly_beans, jars, crates
 
@@ -38,7 +38,7 @@ Script:
     print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
 
-## Bạn thấy cái gì. 
+## You see something.
 
     $ python ex24.py
     Let's practice everything.
@@ -62,11 +62,8 @@ Script:
     We can also do that this way:
     We'd have 500000 beans, 500 jars, and 5 crates.
 
-## Nghiên cứu thêm
+## Further research
 
-## Câu hỏi
+## Question
 
-* Tại sao bạn gọi biến là jelly_beans nhưng sau đó tên lại là beans ?
-
-    Hãy nhớ rằng bên trong hàm biến là tạm thời. Khi bạn return thì nó sẽ được gán vào biến sau đó. Tôi chỉ tạo ra một biến để bean để giữ lại giá trị trả về.
-    
+* Why did you call the variable jelly_beans but then the name was beans?     Remember that the function inside a variable is temporary. When you return it will be assigned to the variable later. I just created a variable to the bean to retain the return value.
