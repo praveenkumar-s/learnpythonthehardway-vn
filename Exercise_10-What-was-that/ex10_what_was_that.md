@@ -1,6 +1,5 @@
-Có hai cách để tạo ra chuỗi string có nhều dòng. Các thứ nhất là chèn " \n" vào giữa. Các thứ hai là trong chuỗi nhập vào đễ xuống dòng ta gõ " Enter"
-
-Ví dụ
+There are two ways to create multi-line strings. The first is to insert "\ n" in the middle. The second is in the string entered at the end of the line we type "Enter"
+For example
 ```sh
 print "thanh \n ha"
 ```
@@ -9,19 +8,19 @@ hoặc là
     print """thanh
     ha"""
 
-Để tạo ra khoảng trắng tương đương gõ phím "Tab" ta dùng \t . đẻ sử dụng ký tự "\" trong string ta dùng "\\". Một lưu ý nữa là khi ta muốn thêm dấu nháy kép " vào trong chuỗi ta không thể nhập chuỗi vào theo cách sau
+To create an equivalent space, type the "Tab" key and use \ t. to use the "" character in the string we use "\". One more note is that when we want to add quotation marks "into the string we cannot enter the following string
 
     print " thanh ha in "VDC""
     
-khi đó ta phải sử dụng dấu nháy đơn ' thay cho nháy kép
+then we have to use single quotes instead of double quotes
 ```sh
 print 'thanh ha in "VDC"'
 ```
-Ta cũng có thể dùng """ trong trường hợp này.
+You can also use "" "in this case.
 
-Trường hợp ta muốn thêm dấu nháy đơn vào chuỗi thì làm ngược lại
+In case we want to add single quotes to the string, do the opposite
 
-Chạy đoạn chương trình sau
+Run the following program
 ```sh
 tabby_cat = "\tI'm tabbed in."
 persian_cat = "I'm split\non a line."
@@ -52,9 +51,3 @@ I'll do a list:
         * Catnip
         * Grass
 ```
-### Escape Sequences
-
-### Study Drills
-
-###Common Student Questions
-
