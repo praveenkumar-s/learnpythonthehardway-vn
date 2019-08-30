@@ -1,17 +1,17 @@
-﻿# Exercise 3: Số học và phép toán
+# Exercise 3: Arithmetic and math
 
-Tất cả các ngôn ngữ lập trình đều có các số và phép toán. Bài tập này có nhiều các ký hiệu về toán học.
+All programming languages ​​have numbers and operations. This exercise has many mathematical symbols.
 
-| Ký hiệu 	| Tên tiếng Anh	|  Tên Tiếng Việt	| 
-|---		|---			|				---	|
-| +  | plus  |Phép Cộng   |
-| -  |  minus | Phép Trừ  |
-|  / |  slash  |  Phép Chia |
-| *  | asterisk  | Phép Nhân  |
-| %  |  percent |  Phần Trăm  |
-|  < |  less-than | Nhỏ hơn	  |
-| >  |  greater-than | Lớn hơn  |
-| <=  |  less-than-equal |  Nhỏ hơn hoặc bằng |
-| >= | greater-than-equal | Lớn hơn hoặc băng |
+|Symbol   | English name|
+|---        |---            | 
+| +  | plus  |
+| -  |  minus | 
+|  / |  slash  |
+| *  | asterisk  |
+| %  |  percent | 
+|  < |  less-than | 
+| >  |  greater-than |
+| <=  |  less-than-equal |  
+| >= | greater-than-equal |
 
-Trên là bảng tổng hợp các phép toán thường gặp, bạn sẽ gặp nhiều ký hiệu khác hoặc sự kết hợp các ký hiệu này với nhau.
+Above is a summary of common mathematical operations, you will encounter many other symbols or combinations of symbols together.
