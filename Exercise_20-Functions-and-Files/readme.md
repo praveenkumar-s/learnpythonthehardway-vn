@@ -47,24 +47,24 @@ Script:
 
     3 This is line 3
 
-## Luyện tâp
+## Practice
 
-* Viết comment trên mỗi dòng để hiểu dòng này làm gì
-* Với mỗi lần print_a_line đang chạy, bạn đang truyền một biến là current_line
-* Tìm đến mỗi một hàm được sử dụng, kiểm tra lại *def* để chắc chắn rằng bạn đã truyền đúng tham số.
-* Nghiên cứu về hàm seek(). Thử pydoc file
-* Nghiên cứu lại kí tự +=
+* Write comments on each line to understand what this line does * With each time print_a_line is running, you are passing a variable called current_line * Go to each function used, double check * def * to make sure you passed it Correct parameter. * Research on the seek () function. Try pydoc file * Research the character + =
 
-## Câu hỏi
 
-* f là gì trong hàm print_all và các hàm khác?
 
-    Biến f là giống như các hàm trong bài 18. Một file trong python sẽ giống như một ổ đĩa lơn, hoặc một ổ đĩa DVD. Nó có "read head" , và bạn có thể "seek" như một đầu đọc sẽ di chuyển đên con trỏ một ví trị nào trong file, và sau đó làm việc với nó. Mỗi làn bạn chạy f.seek(0) bạn sẽ di chuyển đến ví trị đầu tiên của file. Mỗi lần bạn chạy f.readline() bạn đang đọc một dòng từ file, và di chuyển từ đầu đến cuối file bởi kí tự "\n".
 
-* Tại sao là ko đặt seek(current_line) thay bằng seek(0) ?
 
-    Đầu tiên, hàm seek() là byte không phải line. Hàm seek(0) di chuyển đến byte đầu tiên của file. 
+## Question
 
-* readline() biết được mỗi dòng như thế nào ?
+* What is f in print_all and other functions?     The variable f is the same as the functions in lesson 18. A file in python will look like a big drive, or a DVD drive. It has a "read head", and you can "seek" as a reader to move to a pointer within a file, and then work with it. Each lane you run f.seek (0) you will move to the first value of the file. Each time you run f.readline () you are reading a line from the file, and moving from the beginning to the end of the file by the "\ n" character. * Why not set seek (current_line) instead of seek (0)?     First, the seek () function is a non-line byte. The seek (0) function moves to the first byte of the file. * How does readline () know each line?
 
-    Bên trong readline() là code mà có thể quét mỗi byte của file cho đến khi tìm đến kí tự "\n", sau đó dừng lại việc đọc file trả lại chuối. File f chịu trách nhiệm duy trì vị trí hiện tại của file.
+
+
+
+
+
+
+
+
+    Inside the readline () is the code that can scan each byte of the file until it reaches the "\ n" character, then stop reading the file and return the string. File f is responsible for maintaining the current location of the file.
