@@ -1,4 +1,4 @@
-Bạn đã được học *if-statements*, functions và list. Giờ ta sẽ ôn lại những kiến thức này. thực hiện đoạn chương trình sau và xem chương trình làm những gì:
+You have learned * if-statements * , functions and list. Now we will review this knowledge. Execute the following program and see what the program does:
 
 ```sh
 from sys import exit
@@ -81,7 +81,7 @@ start()
 
 
 ### What You Shoud See
-Chạy chương trình trên và nhập vào các tùy chọn, ví dụ 
+Run the above program and enter options, for example 
 
 ```sh
 $ python ex35.py
@@ -103,21 +103,21 @@ You greedy bastard! Good job!
 
 ### Study Drills
 
-1. Vẽ sơ đồ của trò chơi và làm cách nào để vượt qua trò chơi
-2. Sữa tất cả các lỗi của bạn, bao gồm cả lỗi cú pháp
-3. Viết chú thích cho các funtions mà bạn không hiểu
-4. Thêm vào game, đơn giản
-5. Trong hàm *gold_room* yêu cầu người dùng nhập vào một số. Bắt lỗi khi người dùng nhập vào không phải là số nguyên. Sử dụng hàm int() để làm việc này
+1. Draw a diagram of the game and how to get past it 2. Fix all your errors, including syntax errors 3. Write notes for funtions you don't understand 4. Add to the game , simple 5. In the * gold_room * function ask the user to enter a number. Getting an error when the user enters not an integer. Use the int () function to do this
+
+
+
+
  
 ### Common Student Questions
-Q1 : Tại sao lại viết *while True*?
+Q1: Why write * while True * ?
 
-Answer: vòng lặp vô hạn, chỉ thoát ra khi có câu lệnh rẽ nhánh hoặc là lệnh chuyển sang hàm khác
+Answer: infinite loop, only exits when there is a branch statement or the command to switch to another function
 
-Q2: *exit(0)* để làm gì?
+Q2: * exit (0) * for what?
 
-Answer: Rất nhiều hệ thổng có thể hủy bỏ với *exit(0)*, nếu là *exit(1)* thì sẽ có lỗi. như vậy ta có thể sử dụng *exit(1)* và *exit(2)* cho các lỗi khác nhau
+Answer: Many systems can be canceled with * exit (0) * , if it is * exit (1) * then there will be errors. so we can use * exit (1) * and * exit (2) * for different errors
 
-Q3: Tại sao trong một vài trường hợp sử dụng raw_input(), một vài trường hợp sử dụng raw_input('> ')?
+Q3: Why are some cases using raw_input (), some using raw_input ('>')?
 
-Answer: tất cả các chuỗi string trong raw_input đều có mục đích gợi ý và nhắc người dùng nhập vào
+Answer: All string strings in raw_input are intended to suggest and prompt the user to enter
