@@ -1,5 +1,4 @@
-Tiếp tục thực hành với argv và raw_input yêu cầu dữ liệu nhập vào từ người dùng. Trong trường hợp này ta sẽ thêm 
-dấu nhắc lênh '>' để gợi ý người dùng nhập dữ liệu
+Continuing practice with argv and raw_input requires user input. In this case, we will add the command prompt '>' to prompt the user to enter data
 ```sh
 from sys import argv
 
@@ -24,7 +23,7 @@ And you have a %r computer.  Nice.
 """ % (likes, lives, computer)
 ```
 ### What You Should See
-Chạy chương trình nhập các dữ liệu cần thiết
+Run the program to enter the required data
 ```
 $ python ex14.py zed
 Hi zed, I'm the ex14.py script.
