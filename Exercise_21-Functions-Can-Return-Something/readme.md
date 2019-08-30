@@ -1,8 +1,8 @@
 # Exercise 21: Functions Can Return Something
 
-## Ví dụ 
+## For example
 
-Bạn đã sử dụng kí tự "=" để đặt tên và gán trị số và chuỗi cho chúng. Bây giờ chúng tôi sẽ thổi cho bạn ý tưởng lại lần nữa bởi việc chỉ ra cho bạn làm thế nào để sử dụng kí tự "=" và một từ mới return để thiết lập giá trị bằng hàm trong python. 
+You have used the "=" character to name and assign numbers and strings to them. Now we'll give you an idea once again by showing you how to use the "=" character and a new return word to set a value using a function in python.
 
 Script: 
 
@@ -32,9 +32,9 @@ Script:
     print "That becomes: ", what, "Can you do it by hand?"
 
 
-Đoán script trên thì làm ra các hàm toán học của chúng ta. Nhưng thứ quan trọng là dòng cuối ở đây chúng tôi nói là return a + b 
+Guessing the script above makes our mathematical functions. But what's important is that the last line here we say is return a + b
 
-## Chạy code 
+##  code 
 
     python ex21.py
     Let's do some math with just functions!
@@ -50,15 +50,11 @@ Script:
     ADDING 35 + -4426
     That becomes:  -4391 Can you do it by hand?
 
-## Luyện tập
+## Practice
 
-* Nếu bạn chưa chắc về return, thử viết một vài hàm của mình và trả lại một vài giá trị
-* Hơi ngươc, Viết một công thức đơn giản và sử dụng các hàm như một cách để tính
+* If you are not sure about return, try writing some of your functions and return some values * Somewhat, write a simple formula and use functions as a way to calculate
 
-## Câu hỏi
 
-* Tôi có thể sử dụng raw_input() để nhập giá trị của mình không ?
+## Question
 
-    Hãy nhớ đến int(raw_input())? vấn đề với điều này là bạn không thể nhập được kiểu float, thay vào đó hãy sử dụng float(raw_input()).
-    
-
+* Can I use raw_input () to enter my value?     Remember int (raw_input ())? The problem with this is that you cannot type a float, instead use float (raw_input ()).
