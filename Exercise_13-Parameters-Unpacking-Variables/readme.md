@@ -1,6 +1,6 @@
-Ở phần này ta sẽ chạy script cùng với các tham số truyền vào
+In this section, we will run the script along with the parameters
 
-Ví dụ ở chương trình sau
+For example, in the following program
 ```sh
 from sys import argv
 
@@ -11,10 +11,9 @@ print "Your first variable is:", first
 print "Your second variable is:", second
 print "Your third variable is:", third
 ```
+We use 'import' to add features to the script. This makes the program more compact but also means we have to write documents for the program
 
-Ta dùng 'import' để thêm các tính năng cho script. Điều này làm cho chương trình nhỏ gọn hơn nhưng cũng đồng nghĩa ta phải viết tài liệu cho chương trình
-
-'argv' là một biến luận lý, là một cú pháp chuẩn, chứa các biến được truyền vào khi chạy script. Như trong ví dụ trên là các biến firt, second, third.
+'argv' is a logical variable, a standard syntax, containing the variables passed when running the script. As in the above example, the variables firt, second, third.
 
 ### Hold Up! Features Have Another Name
 
@@ -32,7 +31,7 @@ Your first variable is: stuff
 Your second variable is: things
 Your third variable is: that
 ```
-Nếu ta không chuyền đủ 3 tham số đầu vào thì chương trình sẽ báo lỗi
+If we do not pass all 3 input parameters, the program will display an error
 ````sh
 $ python ex13.py first 2nd
 Traceback (most recent call last):
@@ -40,15 +39,3 @@ Traceback (most recent call last):
     script, first, second, third = argv
 ValueError: need more than 3 values to unpack
 ```
-### Study Drills
-
-Bạn có thể kết hợp với `raw_input` để truyền đối số do bạn nhập vào. Bạn có thể chạy chương trình mở rộng có tên là `ex13_raw_input.py` để xem kết quả. Cách thực hiện chương trình này như sau
-
-```sh
-python ex13_raw_input.py To Thanh
-```
-
-Lưu ý: Đối số `To` và `Thanh` được truyền vào ngay khi thực thi chương trình. Sau đó bạn sẽ nhập thêm một giá trị tiếp theo ở màn hình nhắc lệnh:
-
-
-### Câu hỏi chung
